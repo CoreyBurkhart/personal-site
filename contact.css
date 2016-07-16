@@ -1,0 +1,101 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        align-self: center;
+        background: transparent;
+        font-family: 'PT Sans', sans-serif;
+    }
+
+
+#wrapper {
+  display:flex;
+  flex-direction: column;
+  
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  width: 40vh;
+  align-self: center;
+  
+}
+
+input, textarea {
+  width: 40vw;
+  margin: 20px 0;
+  
+  border-radius: 5px;
+  background-color: rgba(229,229,229, .5);
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  height: 150px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: -15px;
+  
+}
+
+#submit-button {
+  height: 50px;
+  width: 40vw;
+  background-color: mediumseagreen;
+  border-radius: 10px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#heart {
+  font-size: 6rem;
+  color: pink;
+}
+
+#heart-div {
+  margin-bottom: 30px;
+}
+
+.logo-links {
+    display: flex;
+    margin: 1vh 0;
+    margin-bottom: 10vh;
+    justify-content: space-between;
+}
+
+.logo-links i:hover {
+  color: mediumseagreen;
+}
+
+/*
+.logo-anchor {
+  margin: 50px;
+  padding: -20px;
+}
+*/
+
+.logo-links i {
+  color: rgba(0,139,139, .8);
+  margin: 0 10px;
+  font-size: 35px;
+}
+
+
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8vh;
+  margin-bottom: 20px;
+}
