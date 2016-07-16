@@ -4,11 +4,11 @@ Goals: Simplicity, clarity, flow.
 
 The good: 
   - Looks decent when viewed on desktop
-  - Use of povided buttons to navigate, lands the visitors cursor on the "say hello" button
+  - Use of provided buttons to navigate, lands the visitors cursor on the "say hello" button
 
 The bad: 
   - need better media queries 
-  - more research on what units to use to avoid issues with changing viewports
+  - more research on what css units to use to avoid issues with changing viewports
 
 The ugly:
   - elements currently overlapping in small screens
