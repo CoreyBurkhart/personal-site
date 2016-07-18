@@ -1,0 +1,136 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NORMALIZATION AND THEMES
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+* {
+  text-align: center;
+}
+
+.layout {
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LANDING
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.landing {
+  background-image: url("../me-landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 80vh;
+  left: 0;
+  right: 0;
+  text-align: left;
+  width: 50%;
+  margin: 5% auto;
+  text-align: center; /*aligns the <p> in the button horizontal axis */
+  vertical-align: middle; /*aligns the <p> in the button vertical axis */
+}
+
+.arrow-button p {
+  display: inline; /* must be inline for vertical center */
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ABOUT ME
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#heart {
+  font-size: 5em;
+  color: cornflowerblue;
+  margin: 0 10px 0 0;
+}
+
+#about-me {
+  margin: 10px;/* top right bottom left */
+}
+
+.non-landing-button {
+  position: static;
+}
+
+ul {
+  column-count: 2;
+  margin: 5% 10px;
+  list-style: none;
+}
+
+ul i {
+  color: green;
+  margin-right: 5%;
+}
+
+li {
+  text-align: left; 
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CONTACT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Media queries
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.about p{
+  font-size:;
+}
+
+.arrow-button {
+  width:;
+}
+
+#button2 {
+  position: ;
+}
