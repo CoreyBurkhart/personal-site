@@ -2,16 +2,8 @@
 
 Goals: Simplicity, clarity, flow. 
 
-The good: 
-  - Looks decent when viewed on desktop
-  - Use of provided buttons to navigate, lands the visitors cursor on the "say hello" button
-
-The bad: 
-  - need better media queries 
-  - more research on what css units to use to avoid issues with changing viewports
-
-The ugly:
-  - elements currently overlapping in small screens
+Elements shouldn't be overlapping now
+Foundation is pretty awesome, just need to learn sass/scss!
 
 Planned Features:
   - use of buttons softly scolls the visitor to the next part of webpage.
