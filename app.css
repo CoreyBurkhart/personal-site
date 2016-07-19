@@ -11,6 +11,10 @@ NORMALIZATION AND THEMES
   position: relative;
 }
 
+  #about-intro, #contact {
+    min-height: 60vh;
+  }
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 LANDING
@@ -23,13 +27,18 @@ LANDING
   background-position: left;
 }
 
+h1 {
+  font-size: 5rem;
+  padding: 2rem 0 0 .7rem;
+  text-align: left;
+}
+
 .arrow-button {
   position: absolute;
   top: 80vh;
   left: 0;
   right: 0;
-  text-align: left;
-  width: 50%;
+  width: 12rem;
   margin: 5% auto;
   text-align: center; /*aligns the <p> in the button horizontal axis */
   vertical-align: middle; /*aligns the <p> in the button vertical axis */
@@ -37,6 +46,11 @@ LANDING
 
 .arrow-button p {
   display: inline; /* must be inline for vertical center */
+  font-size: 1.2rem;
+}
+
+.arrow-button i{
+  margin: 0 1rem 0 0;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -46,20 +60,30 @@ ABOUT ME
 #heart {
   font-size: 5em;
   color: cornflowerblue;
-  margin: 0 10px 0 0;
+  margin: 0 .4rem 0 0;
 }
+
+#about-intro {
+  margin: 2rem .4rem;
+}
+
 
 #about-me {
-  margin: 10px;/* top right bottom left */
+  margin: .5rem 0 0 0;  /* top right bottom left */ 
+  background-color: rgba(229,229,229, .5);
+  border-radius: .5rem;
+  padding: 1rem;
 }
 
-.non-landing-button {
-  position: static;
+.list-header {
+  margin: 3rem 0 1rem 0;
+  border-bottom: thick solid cornflowerblue;
+  padding-bottom: .4rem;
 }
 
 ul {
   column-count: 2;
-  margin: 5% 10px;
+  margin: 5% .5rem;
   list-style: none;
 }
 
@@ -72,19 +96,27 @@ li {
   text-align: left; 
 }
 
+.skill-text {
+  color: rgb(82, 85, 82);
+}
+
+.non-landing-button {
+  position: static;
+}
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 CONTACT
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+#responsive-img {
+  height: 10rem;
+  margin: .8rem 0;
+}
 
 
-
-
-
-
-
-
+.logo-links {
+  font-size: 5rem;
+}
 
 
 
@@ -123,14 +155,69 @@ CONTACT
 Media queries
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.about p{
-  font-size:;
+@media handheld and (orientation: landscape) {
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .arrow-button {
+    position: static;
+    width: 250px;
+    margin-top: 100px;
+  }
 }
 
-.arrow-button {
-  width:;
+@media (max-height: 450px ) {
+  .arrow-button {
+    position: static;
+  }
 }
 
-#button2 {
-  position: ;
+@media (min-width: 600px) {
+
+  #responsive-img {
+  height: 20rem;
+  
+  }
+  
+  ul {
+    padding: .5em 2rem;
+  }
+  
+  ul li {
+    font-size: 1.5rem  }
+  
+  
+  h1 {
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+  *{
+    color: red;
+  }
+  
+  
+  #about-me {
+    margin:0 auto;
+  }
+  
+  .about-p{
+    font-size:;
+  }
+
+  .arrow-button {
+    width: ;
+  }
+
+/*
+  .non-landing-button {
+    position: absolute;
+  }
+*/
+  
 }
