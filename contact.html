@@ -4,13 +4,12 @@
 			<meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 			<title>Corey Burkhart | Front-End Web Developer</title>
-            <link rel="stylesheet" href="normalize.css">
-            <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-            <script src="https://use.fontawesome.com/b5722f1bf7.js"></script>
+            <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="foundation.css">
             <link rel="stylesheet" href="contact.css">
 		</head>
         <body>
-            <div id="wrapper">
+            <div class="row small-12 medium-6 large-4" id="wrapper">
               <h1>Together we will help your product grow.</h1>
                 <div id="heart-div">
                   <span class="fa-stack fa-lg" id="heart">
@@ -20,29 +19,46 @@
                 </div>
               <form action="https://formspree.io/hello@coreyburkhart.com"
               method="POST">
-                <label for="name"> Your full name</label>
-                  <input id="name" type="text" name="name" required placeholder="John Smith">
-                
-                <label for="company"> Company or Organization</label>
-                  <input id="company" type="text" name="company" placeholder="Goose, Mavrick & Sons">
-                
-                <label for="email">Your email address</label>
-                  <input id="email" type="email" required name="_replyto" placeholder="jsmith@email.com">
-                
-                <label for="budget"> Your budget</label>
-                  <input id="budget" type="text" required name="budget" placeholder="$5,000">
-                
-                 <label> Project details</label>
+                <div class="">
+                  <label for="name"> Your full name <small>Required</small></label>
+                    <input id="name" type="text" name="name" required placeholder="Pete Michell">
+                </div>
+                <div>
+                  <label for="company"> Company or Organization</label>
+                    <input id="company" type="text" name="company" placeholder="Goose, Mavrick & Sons LLC">
+                </div>
+                <div>
+                  <label for="email">Your email address <small>Required</small></label>
+                    <input id="email" type="email" required name="_replyto" placeholder="thetopgunz@email.com">
+                </div>
+                <div>
+                  <div>
+                    <label class="" for="budget">Your budget <small>Required</small></label>
+                  </div>
+                  <div class="input-group">
+                    <span class="input-group-label" alt="Dollar Sign">$</span>
+                    <input class="input-group-field" id="budget" type="number" required name="budget" placeholder="5,000">
+                  </div>
+                </div>
+                <div>
+                 <label> Project details <small>Required</small></label>
                   <textarea name="message" required placeholder="Please include as much information as possible."></textarea>
+                </div>
                 
-                <button id="submit-button" type="submit" value="Send">Let's work</button>
+                <button class="success button large"id="submit-button" type="submit" value="Send">Let's work!<i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
               </form> 
-              <h2>My work</h2>
-               <div class="logo-links">
-                 
-                <a href="https://github.com/CoreyBurkhart" class="logo-anchor"><i class="fa fa-github fa-fw logos" aria-hidden="true"></i><br></a>
-                <a href="https://www.linkedin.com/in/corey-burkhart-4859a6123?trk=hp-identity-name" class="logo-anchor"><i class="fa fa-linkedin fa-fw logos" aria-hidden="true"></i><br></a>
+              <footer>
+               <div class="row-centered small-6 medium-4 large logo-links">
+                 <div class="column small-6">
+                  <a href="https://github.com/CoreyBurkhart" class="column logo-anchor"><i class="fa fa-github fa-fw logos" aria-hidden="true"></i></a>
+                </div>
+                <div class="column small-6">
+                  <a href="https://www.linkedin.com/in/corey-burkhart-4859a6123?trk=hp-identity-name" class="column logo-anchor"><i class="fa fa-linkedin fa-fw logos" aria-hidden="true"></i>
+                  </a>
+                 </div>
               </div>
+              </footer>
             </div>
+          <script src="https://use.fontawesome.com/b5722f1bf7.js"></script>
         </body>
 	</html>

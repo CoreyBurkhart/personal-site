@@ -4,11 +4,17 @@ NORMALIZATION AND THEMES
 
 * {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
 }
 
 .layout {
   min-height: 100vh;
   position: relative;
+  
 }
 
   #about-intro, #contact {
@@ -21,7 +27,7 @@ LANDING
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .landing {
-  background-image: url("../me-landing.jpg");
+  background: radial-gradient(ellipse, transparent 70%, cornflowerblue), url("me-landing.jpg"), no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -47,10 +53,13 @@ h1 {
 .arrow-button p {
   display: inline; /* must be inline for vertical center */
   font-size: 1.2rem;
+  margin: auto 0;
+  
 }
 
 .arrow-button i{
-  margin: 0 1rem 0 0;
+  display: inline;
+  margin: auto 1rem auto 0;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,6 +94,7 @@ ul {
   column-count: 2;
   margin: 5% .5rem;
   list-style: none;
+  column-width: auto;
 }
 
 ul i {
@@ -116,6 +126,14 @@ CONTACT
 
 .logo-links {
   font-size: 5rem;
+}
+
+#hire-button {
+  margin-bottom: 3rem;
+}
+
+#contact h2, #contact h3, #contact h4 {
+  border-bottom: medium solid cornflowerblue;
 }
 
 
@@ -178,7 +196,6 @@ Media queries
 
   #responsive-img {
   height: 20rem;
-  
   }
   
   ul {
@@ -191,15 +208,17 @@ Media queries
   
   h1 {
     text-align: center;
+    font-size: 7rem;
+  }
+  
+  #hire-button {
+    width: 15rem;
+    height: 5rem;
   }
 }
 
 
 @media (min-width: 1200px) {
-
-  *{
-    color: red;
-  }
   
   
   #about-me {
@@ -211,13 +230,10 @@ Media queries
   }
 
   .arrow-button {
-    width: ;
+    width: 15rem;
+    height: 4rem;
+    top: 70vh;
   }
 
-/*
-  .non-landing-button {
-    position: absolute;
-  }
-*/
   
 }
