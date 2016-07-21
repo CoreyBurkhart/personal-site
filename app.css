@@ -7,8 +7,9 @@ NORMALIZATION AND THEMES
   font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .about-p {
   font-family: 'Raleway', sans-serif;
+  color: rgb(82, 85, 82);
 }
 
 .layout {
@@ -17,9 +18,27 @@ h1, h2, h3, h4, h5, h6 {
   
 }
 
-  #about-intro, #contact {
+#about-intro, #contact {
     min-height: 60vh;
-  }
+}
+
+a, a i, #hire-button {
+  -o-transition: .5s;
+  -ms-transition:.5s;
+  -moz-transition: .5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+}
+
+
+#landing-button {
+  border-radius: .5em;
+  border-width: .2rem;
+  font-weight: 700;
+}
+
+
+
 
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -27,7 +46,7 @@ LANDING
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 .landing {
-  background: radial-gradient(ellipse, transparent 70%, cornflowerblue), url("me-landing.jpg"), no-repeat;
+  background: url("me-landing.jpg"), no-repeat;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left;
@@ -37,9 +56,12 @@ h1 {
   font-size: 5rem;
   padding: 2rem 0 0 .7rem;
   text-align: left;
+  color: black; 
+  border-radius: 1rem; 
 }
 
 .arrow-button {
+  
   position: absolute;
   top: 80vh;
   left: 0;
@@ -67,8 +89,8 @@ ABOUT ME
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 #heart {
-  font-size: 5em;
-  color: cornflowerblue;
+  font-size: 5rem;
+  color: #42adda;
   margin: 0 .4rem 0 0;
 }
 
@@ -77,8 +99,8 @@ ABOUT ME
 }
 
 
-#about-me {
-  margin: .5rem 0 0 0;  /* top right bottom left */ 
+.about-p {
+  margin: .5rem auto 0 auto;  /* top right bottom left */ 
   background-color: rgba(229,229,229, .5);
   border-radius: .5rem;
   padding: 1rem;
@@ -86,32 +108,43 @@ ABOUT ME
 
 .list-header {
   margin: 3rem 0 1rem 0;
-  border-bottom: thick solid cornflowerblue;
+  border-bottom: thick solid #42adda;
   padding-bottom: .4rem;
 }
 
 ul {
-  column-count: 2;
-  margin: 5% .5rem;
+  column-count: 1;
   list-style: none;
-  column-width: auto;
+  fill: green;
+  font-size: .6rem;
+  
 }
 
 ul i {
-  color: green;
+  color: #3adb76;
   margin-right: 5%;
 }
 
+.list h2 {
+  font-size: 1rem;
+  border-bottom: thin solid rgb(82, 85, 82);
+}
+
+#skill-div {
+  margin-top: 1rem;
+}
+
 li {
-  text-align: left; 
+  text-align: left;
 }
 
 .skill-text {
   color: rgb(82, 85, 82);
 }
 
-.non-landing-button {
+#non-landing-button {
   position: static;
+  border-radius: .5em;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -123,17 +156,35 @@ CONTACT
   margin: .8rem 0;
 }
 
+#contact p {
+  margin: 0 auto 1.5rem auto;
+}
+
 
 .logo-links {
   font-size: 5rem;
 }
 
-#hire-button {
-  margin-bottom: 3rem;
+.logo-links i {
+  color: #42adda;
 }
 
+
+.logo-links i:hover {
+  color: #da6f42;
+}
+
+
+#hire-button {
+  margin-bottom: 3rem;
+  border-radius: .5rem;
+  position: static;
+}
+
+
 #contact h2, #contact h3, #contact h4 {
-  border-bottom: medium solid cornflowerblue;
+  border-bottom: medium solid #42adda;
+  color: rgb(82, 85, 82);
 }
 
 
@@ -192,10 +243,46 @@ Media queries
   }
 }
 
+@media (min-width: 300px) {
+  .about-p {
+    font-size: .7rem;
+
+  }
+}
+
 @media (min-width: 600px) {
 
+  h1, h2, h3, h4, h5, h6, {
+  font-size: 3rem; 
+  }
+  
+  .list h2 {
+  font-size: 2rem;
+  }
+  
   #responsive-img {
   height: 20rem;
+  }
+  
+  #heart {
+  float:left;
+  font-size: 5.5rem;
+  margin: 0 .4rem 0 0;
+  }
+  
+  .about-me {
+  margin: .5rem auto 0 auto;  /* top right bottom left */ 
+  background-color: rgba(229,229,229, .3);
+  border-radius: .5rem;
+  padding: 1rem;
+}
+  
+  #about-intro .about-p {
+    background-color: transparent;
+  }
+  
+  .about-p {
+  font-size: 1.6rem;
   }
   
   ul {
@@ -221,12 +308,21 @@ Media queries
 @media (min-width: 1200px) {
   
   
+   h1, h2, h3, h4, h5, h6, {
+  font-size: 4rem; 
+}
+  
   #about-me {
     margin:0 auto;
   }
   
+  #heart {
+  font-size: 7rem;
+  margin: 0 .4rem 0 0;
+  }
+  
   .about-p{
-    font-size:;
+    font-size: 2rem;
   }
 
   .arrow-button {

@@ -4,6 +4,14 @@
   text-align: center;
 }
 
+a, a i, button {
+  -o-transition: .5s;
+  -ms-transition:.5s;
+  -moz-transition: .5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+}
+
 #wrapper {
   margin: 0 auto;
 }
@@ -12,14 +20,12 @@ h1 {
   padding-top: 1.5rem;
 }
 
-
-textarea {
-  border-radius: 5px;
-  background-color: rgba(229,229,229, .3);
-}
-
 input, label, textarea {
   text-align: left;
+}
+
+input, textarea {
+  border-radius: .5em;
 }
 
 textarea {
@@ -29,6 +35,7 @@ textarea {
 label {
   font-size: 1rem;
   font-weight: 700;
+  color: rgb(82, 85, 82);
 }
 
 small {
@@ -44,6 +51,7 @@ button i {
 #submit-button {
   border-radius: .5rem;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 #heart {
@@ -56,18 +64,31 @@ button i {
 }
 
 .logo-links {
-  margin:  auto;
+  margin: 0 auto 4rem auto;
+  border-top: thin solid black;
+  padding-top: 2rem;
 }
 
 .logo-links i:hover {
-  color: mediumseagreen;
+  color: rgba(0, 0, 0, .7);
 }
 
 
 .logo-links i {
-  color: mediumseagreen;
+  color: #3adb76;
   font-size: 3rem;
 }
 
+a {
+  display: inline;
+}
 
-
+@media (min-width: 800px) {
+  label {
+    font-size: 1.2rem;
+  }
+  
+  small {
+    font-size: .7rem;
+  }
+}
