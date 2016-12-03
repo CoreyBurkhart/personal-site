@@ -1,7 +1,9 @@
 @import "variables";
 
+
 .block {
   min-height: 50vh !important;
+  max-height: 50vh !important;
   padding: 1rem 3rem !important;
   .links i {
     padding: 0 1rem;
@@ -64,10 +66,6 @@ h1 {
       color: darken($secondary-color-contrast, 10%);
     }
   }
-}
-
-.left {
-  text-align: left;
 }
 
 .quote {

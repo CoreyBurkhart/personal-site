@@ -1,5 +1,6 @@
 .block {
   min-height: 50vh !important;
+  max-height: 50vh !important;
   padding: 1rem 3rem !important;
   margin: 0; }
   .block .links i {
@@ -44,9 +45,6 @@ h1 {
     margin: 0 0 0 1rem; }
   .skills ul li i {
     color: #75e7a3; }
-
-.left {
-  text-align: left; }
 
 .quote blockquote {
   font-size: 2em; }

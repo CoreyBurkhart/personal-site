@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
+import { Button, Card, Row, Col } from 'react-materialize';
 import '../css/block.css';
 
 export default class Block extends Component {
 
   render() {
       return (
-        <div style={this.props.style} className={"col s12 m12 l6 block valign-wrapper " + this.props.className} >
-          <div className="valign">
+        <Col s={12} m={12} l={6} className={'block valign-wrapper ' + this.props.className} >
+          <div style={this.props.style} className="valign">
             {this.props.children}
           </div>
-        </div>
+        </Col>
       );
   }
 }

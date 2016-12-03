@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../css/app.css';
 import Block from './Block.js';
-import img from '../images/7os_26cb1wo-griffin-keller.jpg';
+import { Button, Card, Row, Col, Collapsible, CollapsibleItem } from 'react-materialize';
 
 class App extends Component {
   constructor() {
@@ -30,8 +30,7 @@ class App extends Component {
     }
 
     return (
-      <div className="row container">
-
+      <Row style={{marginBottom: '0 !important'}}>
         {/* ROW 1 */}
           <Block className='image-block'>
           </Block>
@@ -55,15 +54,25 @@ class App extends Component {
           </Block>
 
           {/* ROW 3*/}
-          <Block className={"skills left " }>
-            <h1>I do:</h1>
-            <ul>
-              <li><i className='fa fa-check'></i><span>HTML5 &amp; CSS3</span></li>
-              <li><i className='fa fa-check'></i><span>Javascript</span></li>
-              <li><i className='fa fa-check'></i><span>React</span></li>
-              <li><i className='fa fa-check'></i><span>Foundation 6, bootstrap 3, materialize</span></li>
-              <li><i className='fa fa-check'></i><span>Unit Testing</span></li>
-            </ul>
+          <Block className="skills" >
+            <Row><h1>I do:</h1></Row>
+              <Collapsible popout accordion>
+                <CollapsibleItem header='HTML5 &amp; CSS3' icon='done'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Javascript' icon='done'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='React' icon='done'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Foundation 6, Bootstrap 3, Materialize' icon='done'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Unit Testing' icon='done'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+              </Collapsible>
           </Block>
           <Block className="quote color-set-2" >
           <blockquote>"Hands down the best developer I have ever had the pleasure of working with!"</blockquote>
@@ -83,15 +92,27 @@ class App extends Component {
           </Block>
 
           {/* ROW 5 */}
-          <Block className="skills left">
-            <h1>What I'm learning</h1>
-            <ul>
-              <li><i className="fa fa-flask" aria-hidden="true"></i><span>Node &amp; Express</span></li>
-              <li><i className="fa fa-flask" aria-hidden="true"></i><span>Relational Databases</span></li>
-              <li><i className="fa fa-flask" aria-hidden="true"></i><span>Restful API design</span></li>
-              <li><i className="fa fa-flask" aria-hidden="true"></i><span>Authorization &amp; authentication</span></li>
-              <li><i className="fa fa-flask" aria-hidden="true"></i><span>Security (OAUTH2 and Web Token)</span></li>
-            </ul>
+          <Block className="skills">
+            <Row>
+              <h1>What I'm learning</h1>
+            </Row>
+              <Collapsible popout accordion>
+                <CollapsibleItem header='Node &amp; Express' icon='school'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Relational Databases' icon='school'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Restful API design' icon='school'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Authorization &amp; authentication' icon='school'>
+                  Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </CollapsibleItem>
+                <CollapsibleItem header='Security' icon='school'>
+                  (OAUTH2 and Web Token)
+                </CollapsibleItem>
+              </Collapsible>
           </Block>
 
           <Block className={"quote color-set-2 "}>
@@ -138,7 +159,7 @@ class App extends Component {
                 </a>
               </div>
             </div>
-      </div>
+      </Row>
     );
   }
 }
