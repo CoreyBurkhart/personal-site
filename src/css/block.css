@@ -1,0 +1,87 @@
+.block {
+  min-height: 50vh !important;
+  padding: 1rem 3rem !important;
+  margin: 0; }
+  .block .links i {
+    padding: 0 1rem;
+    transition: color .3s; }
+
+h1 {
+  font-size: 2em;
+  color: #3498db;
+  text-transform: capitalize;
+  font-weight: 800; }
+
+.color-set-1 {
+  background-color: #3498db;
+  color: #a0eec0; }
+  .color-set-1 blockquote {
+    border-left-color: #a0eec0; }
+
+.color-set-2 {
+  background-color: #a0eec0;
+  color: #3498db; }
+  .color-set-2 blockquote {
+    border-left-color: #3498db; }
+
+.image-block {
+  background-image: url("../images/me.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.heading super {
+  font-size: 1.5em;
+  font-weight: 800; }
+.heading aside {
+  margin-top: 2rem;
+  font-size: 2.5rem; }
+
+.skills ul {
+  font-size: 1.2em; }
+  .skills ul li {
+    margin: 0.3rem 0; }
+  .skills ul li span {
+    margin: 0 0 0 1rem; }
+  .skills ul li i {
+    color: #75e7a3; }
+
+.left {
+  text-align: left; }
+
+.quote blockquote {
+  font-size: 2em; }
+.quote sub {
+  font-size: 1.5em; }
+
+.contact-ul section {
+  padding: 2rem 4rem; }
+.contact-ul li {
+  font-size: 1.7rem;
+  margin: 0.5rem 0; }
+.contact-ul i {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #a0eec0; }
+
+.fa-github:hover, .fa-codepen:hover, .fa-linkedin:hover {
+  transition: color .3s;
+  color: white; }
+
+.links {
+  color: #a0eec0;
+  font-size: 6em; }
+
+@media (min-width: 600px) {
+  .links {
+    font-size: 7em; }
+
+  p, li {
+    font-size: 1.2em; } }
+@media (min-width: 992px) {
+  .links {
+    font-size: 8em; }
+
+  p, li {
+    font-size: 1.3em; } }
+
+/*# sourceMappingURL=block.css.map */

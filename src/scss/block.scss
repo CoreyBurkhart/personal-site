@@ -1,0 +1,131 @@
+@import "variables";
+
+.block {
+  min-height: 50vh !important;
+  padding: 1rem 3rem !important;
+  .links i {
+    padding: 0 1rem;
+    transition: color .3s;
+  }
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+  color: $primary-color;
+  text-transform: capitalize;
+  font-weight: 800;
+}
+
+
+.color-set-1 {
+  background-color: $primary-color;
+  color: $secondary-color;
+  blockquote {
+    border-left-color: $secondary-color;
+  }
+}
+
+.color-set-2 {
+  background-color: $secondary-color;
+  color: $primary-color;
+  blockquote {
+    border-left-color: $primary-color;
+  }
+}
+
+.image-block {
+  background-image: url('../images/me.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heading {
+  super {
+    font-size: 1.5em;
+    font-weight: 800;
+  }
+  aside {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+  }
+}
+
+.skills {
+  ul {
+    font-size: 1.2em;
+    li {
+      margin: 0.3rem 0;
+    }
+    li span {
+      margin: 0 0 0 1rem;
+    }
+    li i {
+      color: darken($secondary-color-contrast, 10%);
+    }
+  }
+}
+
+.left {
+  text-align: left;
+}
+
+.quote {
+  blockquote {
+    font-size: 2em;
+  }
+  sub {
+    font-size: 1.5em;
+  }
+}
+
+.contact-ul {
+  section {
+    padding: 2rem 4rem;
+  }
+    li {
+      font-size: 1.7rem;
+      margin: 0.5rem 0;
+    }
+    i {
+      display: inline-block;
+      margin-right: 1rem;
+      color: $secondary-color-contrast;
+    }
+}
+
+
+
+
+.fa-github:hover, .fa-codepen:hover, .fa-linkedin:hover {
+  transition: color .3s;
+  color: white;
+}
+
+.links {
+  color: $secondary-color;
+  font-size: 6em;
+}
+
+
+// medium
+@media (min-width: 600px) {
+  .links {
+    font-size: 7em;
+  }
+
+  p, li {
+    font-size: 1.2em;
+  }
+}
+
+// large
+@media (min-width: 992px) {
+  .links {
+    font-size: 8em;
+  }
+
+  p, li {
+    font-size: 1.3em;
+  }
+}
