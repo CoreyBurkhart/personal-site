@@ -1,0 +1,52 @@
+@import "variables";
+
+.positioning {
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.quote-color-1 {
+  @extend .positioning;
+  background-color: $primary-color;
+  color: $secondary-color;
+  blockquote {
+    border-left-color: $secondary-color;
+  }
+  &::before {
+    background: transparentize($primary-color, .35);
+  }
+}
+
+.quote-color-2 {
+  @extend .positioning;
+  background-color: $secondary-color;
+  color: $primary-color;
+  blockquote {
+    border-left-color: $primary-color;
+  }
+  &::before {
+    background: transparentize($secondary-color, .35);
+  }
+}
+
+
+.quote {
+  blockquote {
+    font-weight: bolder;
+    position: relative;
+    font-size: 2.5em;
+  }
+  sub {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+}
