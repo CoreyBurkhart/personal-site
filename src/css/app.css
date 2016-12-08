@@ -10,4 +10,8 @@
 .valign {
   width: 100%; }
 
+.scroll-enter {
+  opacity: 1;
+  transition: opacity 500ms ease-in; }
+
 /*# sourceMappingURL=app.css.map */
