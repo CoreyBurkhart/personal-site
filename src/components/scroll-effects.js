@@ -1,7 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import classNames from 'classnames';
-import randomString from 'randomstring';
 
 let throttle = (delay, callback) => {
   let previousCall = new Date().getTime();
@@ -20,7 +18,6 @@ export default class ScrollEffect extends React.Component {
         this.state = {
             animated: false
         };
-        this.reference = randomString.generate();
         window.addEventListener('scroll', throttle(200, this.handleScroll.bind(this)));
     }
     componentWillUnmount() {
@@ -36,7 +33,7 @@ export default class ScrollEffect extends React.Component {
         }, this.props.duration * 1000);
     }
     queueAnimate() {
-        let element = this.refs[this.reference];
+        let element = this.element;
         let checkClass = (el) => {
           return el.className === this.props.queueClass;
         };
@@ -67,8 +64,7 @@ export default class ScrollEffect extends React.Component {
     }
     handleScroll(e) {
         if (!this.state.animated) {
-            let element = this.refs[this.reference];
-            let elementPositionY = element.getBoundingClientRect().top + document.body.scrollTop,
+            let elementPositionY = this.element.getBoundingClientRect().top + document.body.scrollTop,
                 scrollPositionY = window.scrollY,
                 windowHeight = window.innerHeight;
             if (scrollPositionY + windowHeight / 2 >= elementPositionY + this.props.offset * 1) {
@@ -81,7 +77,7 @@ export default class ScrollEffect extends React.Component {
         }
     }
     render() {
-        const {props, state, reference} = this;
+        const {props, state} = this;
         let cx = classNames;
         let classes = cx({
             'animated': true,
@@ -95,7 +91,7 @@ export default class ScrollEffect extends React.Component {
             style.WebkitAnimationDuration = props.duration + 's';
             style.animationDuration = props.duration + 's';
         }
-        return <div className={classes} key={reference} ref={reference} style={style}>{ props.children }</div>
+        return <div className={classes + ' row'} ref={(element => this.element = element)} style={style}>{ props.children }</div>
     }
 }
 
