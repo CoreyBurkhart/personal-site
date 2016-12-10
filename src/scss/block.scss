@@ -128,6 +128,7 @@ h1 {
   li a:hover {
     transition: color .3s;
     color: white;
+    cursor: pointer;
   }
 }
 
@@ -137,6 +138,7 @@ h1 {
 .fa-github:hover, .fa-codepen:hover, .fa-linkedin:hover {
   transition: color .3s;
   color: white;
+  cursor: pointer;
 }
 
 .links {

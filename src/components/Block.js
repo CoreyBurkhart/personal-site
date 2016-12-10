@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col } from 'react-materialize';
-import CSSTransitionGroup from 'react-addons-css-transition-group'
 import '../css/block.css';
 
 export default class Block extends Component {

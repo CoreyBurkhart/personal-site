@@ -87,11 +87,13 @@ h1 {
   transition: color .3s; }
 .contact-ul li a:hover {
   transition: color .3s;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .fa-github:hover, .fa-codepen:hover, .fa-linkedin:hover {
   transition: color .3s;
-  color: white; }
+  color: white;
+  cursor: pointer; }
 
 .links {
   color: #a0eec0;
