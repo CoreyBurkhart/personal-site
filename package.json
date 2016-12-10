@@ -6,9 +6,7 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
-    "jquery": "^3.1.1",
     "materialize-css": "^0.97.8",
-    "randomstring": "^1.1.5",
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
   },
