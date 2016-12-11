@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Block from './Block.js';
+import ScrollEffects from './scroll-effects';
 import '../css/quote-block.css';
 
 export default class QuoteBlock extends Component {
@@ -14,10 +15,12 @@ export default class QuoteBlock extends Component {
       }
     }
     return (
-      <Block fullWidth={true} className={"quote "+ this.props.colorSet} style={style}>
-        <blockquote>{this.props.quote}</blockquote>
-        <sub><em>{this.props.cite}</em></sub>
-      </Block>
+        <Block fullWidth={true} className={"quote "+ this.props.colorSet} style={style}>
+          <ScrollEffects animate='fadeIn' >
+            <blockquote>{this.props.quote}</blockquote>
+            <sub><em>{this.props.cite}</em></sub>
+          </ScrollEffects>
+        </Block>
     )
   }
 }
