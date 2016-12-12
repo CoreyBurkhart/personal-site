@@ -8,7 +8,7 @@ const ContactForm = (props) => {
     <Block fullWidth={true} className='contact-form'>
       <ScrollEffects animate='fadeIn' >
         <h1>Get in Touch</h1>
-        <aside className='text-flow'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</aside>
+        <aside className='text-flow'>If this isn't your style, my email is below (smiley)</aside>
         <form>
           <p className='flow-text'>
             Hi my name is

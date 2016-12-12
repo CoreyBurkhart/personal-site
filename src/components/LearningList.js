@@ -3,7 +3,8 @@ import Block from './Block.js';
 import ScrollEffects from './scroll-effects';
 import { Row, Collapsible, CollapsibleItem } from 'react-materialize';
 
-const LearningList = () => {
+const LearningList = (props) => {
+
   return (
       <Block className="skills">
         <ScrollEffects animate='fadeInRight'>
@@ -11,9 +12,9 @@ const LearningList = () => {
             <h1>I'm always learning</h1>
           </Row>
           <Row>
-            <aside className='text-flow'>I would especially love to learn more by working with any of these</aside>
+            <aside className='text-flow'>Here are some things I strive to improve at every day.</aside>
           </Row>
-          <Collapsible popout >
+          <Collapsible popout accordion >
             <CollapsibleItem header='Node &amp; Express' icon='build'>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </CollapsibleItem>

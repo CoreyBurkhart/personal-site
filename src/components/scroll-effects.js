@@ -23,6 +23,9 @@ export default class ScrollEffect extends React.Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll.bind(this));
     }
+    componentDidMount() {
+      this.handleScroll();
+    }
     singleAnimate() {
         this.setState({
             animated: true
@@ -67,7 +70,7 @@ export default class ScrollEffect extends React.Component {
             let elementPositionY = this.element.getBoundingClientRect().top + document.body.scrollTop,
                 scrollPositionY = window.scrollY,
                 windowHeight = window.innerHeight;
-            if (scrollPositionY + windowHeight / 2 >= (elementPositionY -200 )+ this.props.offset * 1) {
+            if (scrollPositionY + windowHeight / 2 >= (elementPositionY - 200 )+ this.props.offset * 1) {
                 this.setState({
                     animated: true
                 });

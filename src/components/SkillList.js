@@ -8,26 +8,26 @@ const SkillsList = (props) => {
       <Block className="skills" >
         <ScrollEffects animate='fadeInLeft'>
           <Row>
-            <h1>I'm great at these</h1>
+            <h1>What i can help with</h1>
           </Row>
           <Row>
-            <aside className='text-flow'>Test me out! GIVE ME A JOB!</aside>
+            <aside className='text-flow'>These are the big ones at least</aside>
           </Row>
-          <Collapsible popout  >
-            <CollapsibleItem header='HTML5 &amp; CSS3' icon='done'>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          <Collapsible popout  accordion >
+            <CollapsibleItem header='HTML5, CSS3, SASS' icon='done'>
+              Clean, maintainable, and SEO friendly. As essential as it is important. (cite to upwork test score it good?)
             </CollapsibleItem>
             <CollapsibleItem header='Javascript' icon='done'>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Quirky but awesome. I write in ES6 but understand older javascript as well as jQuery.
             </CollapsibleItem>
             <CollapsibleItem header='React' icon='done'>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              I love and specialize in react, offering great performance, modularity and reliability.
             </CollapsibleItem>
             <CollapsibleItem header='Foundation 6, Bootstrap 3, Materialize' icon='done'>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              This page uses Materialize, but have projects utilizing Foundation and Bootstrap. I enjoy learning any tool that can make development faster and painless.
             </CollapsibleItem>
             <CollapsibleItem header='Unit Testing' icon='done'>
-              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Where there is javascript, there should be testing. I use Jest.
             </CollapsibleItem>
           </Collapsible>
         </ScrollEffects>
