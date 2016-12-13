@@ -6,9 +6,9 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
-    "materialize-css": "^0.97.8",
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "react-materialize": "^0.17.6"
   },
   "scripts": {
     "watch-sass": "mkdir -p ./src/css && sass --watch src/scss:src/css",
