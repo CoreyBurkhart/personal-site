@@ -1,6 +1,7 @@
 import React from 'react';
 import Block from './Block.js';
 import ScrollEffects from './scroll-effects';
+import '../css/social-icons.css';
 
 const SocialIcons = (props) => {
 

@@ -2,6 +2,7 @@ import React from 'react';
 import Block from './Block.js';
 import ScrollEffects from './scroll-effects';
 import { Row, Collapsible, CollapsibleItem } from 'react-materialize';
+import '../css/skill-learning-lists.css';
 
 const SkillsList = (props) => {
   return (

@@ -1,0 +1,41 @@
+@import "variables";
+
+.skills {
+  aside {
+    margin: -1rem 0 2rem 0;
+  }
+  ul {
+    font-size: .9em;
+    li i {
+      color: darken($secondary-color, 20%);
+    }
+  }
+}
+
+.collapsible-body {
+  background-color: $primary-color;
+  color: white;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.collapsible li {
+  min-width: 100% !important;
+  &.active {
+    min-width: 100% !important;
+  }
+  & a {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 600px) {
+
+}
+
+// large
+@media (min-width: 992px) {
+
+}

@@ -1,0 +1,40 @@
+@import "variables";
+
+.contact-ul {
+  section {
+    padding: 2rem 4rem;
+  }
+  h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+  }
+  li {
+    font-size: 1.7rem;
+    margin: 0.5rem 0;
+  }
+  i {
+    display: inline-block;
+    margin-right: 1rem;
+    color: $primary-color;
+  }
+  a {
+    transition: color .3s;
+  }
+  li a:hover {
+    transition: color .3s;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+// medium
+@media (min-width: 600px) {
+
+}
+
+// large
+@media (min-width: 992px) {
+
+}

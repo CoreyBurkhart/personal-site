@@ -1,11 +1,12 @@
 import React from 'react';
 import Block from './Block.js';
 import ScrollEffects from './scroll-effects';
+import '../css/contact-info.css';
 
 const ContactInfo = (props) => {
   return (
     <Block className='contact-ul left color1' >
-      <ScrollEffects animate='fadeIn' offset='-100' >
+      <ScrollEffects animate='fadeIn' offset='-200' >
         <section>
           <h1>Get in Touch</h1>
             <address>

@@ -1,0 +1,21 @@
+.contact-ul section {
+  padding: 2rem 4rem; }
+.contact-ul h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bolder; }
+.contact-ul li {
+  font-size: 1.7rem;
+  margin: 0.5rem 0; }
+.contact-ul i {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #3498db; }
+.contact-ul a {
+  transition: color .3s; }
+.contact-ul li a:hover {
+  transition: color .3s;
+  color: white;
+  cursor: pointer; }
+
+/*# sourceMappingURL=contact-info.css.map */

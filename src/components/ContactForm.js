@@ -1,7 +1,7 @@
 import React from 'react';
 import Block from './Block.js';
 import ScrollEffects from './scroll-effects';
-import { Button,Icon, Row, Col } from 'react-materialize';
+import '../css/contact-form.css';
 
 const ContactForm = (props) => {
   return (
@@ -9,20 +9,18 @@ const ContactForm = (props) => {
       <ScrollEffects animate='fadeIn' >
         <h1>Get in Touch</h1>
         <aside className='text-flow'>If this isn't your style, my email is below (smiley)</aside>
-        <form>
+        <form method='POST' action='https://formspree.io/hello@coreyburkhart.com'>
           <p className='flow-text'>
             Hi my name is
-            <input label='Name' type='text' placeholder='Name' />
+            <input name='name' label='Name' type='text' placeholder='Name' />
              and I am working on developing
-            <input label='Project' type='text'  placeholder='Project' />.
+            <input name='project' label='Project' type='text'  placeholder='Project' />.
             Here is my
-            <input label='Email' type='email' placeholder='Email' />
+            <input name='email' label='Email' type='email' placeholder='Email' />
             so you can get in touch with me and start an amazing relationship.
           </p>
+            <input type="submit" className="waves-effect waves-light btn" value="Send" />
         </form>
-        <Col s={4} m={3} l={3} offset='s8 m9 l9' >
-          <Button action='submit' waves='light' title='submit form'><Icon left >send</Icon>Send</Button>
-        </Col>
       </ScrollEffects>
     </Block>
   )

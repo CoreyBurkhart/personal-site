@@ -1,0 +1,17 @@
+.fa-github:hover, .fa-codepen:hover, .fa-linkedin:hover {
+  transition: color .3s;
+  color: white;
+  cursor: pointer; }
+
+.links {
+  color: #a0eec0;
+  font-size: 6em; }
+
+@media (min-width: 600px) {
+  .links {
+    font-size: 6em; } }
+@media (min-width: 992px) {
+  .links {
+    font-size: 7em; } }
+
+/*# sourceMappingURL=social-icons.css.map */

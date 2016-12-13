@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col } from 'react-materialize';
-import '../css/block.css';
 
 export default class Block extends Component {
 

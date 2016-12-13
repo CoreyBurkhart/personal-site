@@ -1,0 +1,23 @@
+.skills aside {
+  margin: -1rem 0 2rem 0; }
+.skills ul {
+  font-size: .9em; }
+  .skills ul li i {
+    color: #4adf86; }
+
+.collapsible-body {
+  background-color: #3498db;
+  color: white;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 1.3rem; }
+
+.collapsible li {
+  min-width: 100% !important; }
+  .collapsible li.active {
+    min-width: 100% !important; }
+  .collapsible li a {
+    font-size: 1.4rem;
+    font-weight: 500; }
+
+/*# sourceMappingURL=skill-learning-lists.css.map */
