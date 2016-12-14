@@ -15,7 +15,8 @@
   },
   "scripts": {
     "watch-sass": "mkdir -p ./src/css && sass --watch src/scss:src/css",
-    "start": "npm run watch-sass & react-scripts start",
+    "start": "node server.js",
+    "startDev": "npm run watch-sass & react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
