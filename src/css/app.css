@@ -47,5 +47,8 @@ h1 {
 @media (min-width: 992px) {
   h1 {
     font-size: 2.2rem; } }
+@media handheld and (orientation: landscape) {
+  .block {
+    min-height: 100vh; } }
 
 /*# sourceMappingURL=app.css.map */

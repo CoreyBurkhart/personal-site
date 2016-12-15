@@ -9,11 +9,11 @@ const SkillsList = (props) => {
       <Block className="skills" >
         <ScrollEffects animate='fadeInLeft'>
           <Row>
-            <h1>What i can help with</h1>
+            <h1>Dev Ninja Skills</h1>
           </Row>
-          <Row>
-            <aside className='text-flow'>These are the big ones at least</aside>
-          </Row>
+          {/* <Row>
+            <aside className='text-flow'>I tak</aside>
+          </Row> */}
           <Collapsible popout  accordion >
             <CollapsibleItem header='HTML5, CSS3, SASS' icon='done'>
               Clean, maintainable, and SEO friendly. As essential as it is important. (cite to upwork test score it good?)

@@ -46,9 +46,34 @@
     position: relative;
     top: -.65em;
     display: inline-block;
-    max-width: 10em;
+    max-width: 10rem;
   }
   input:focus {
     border-bottom-color: $primary-color !important;
   }
+}
+
+@media (min-width: 600px) {
+  .contact-form {
+  input {
+    max-width: 11rem;
+    }
+  }
+}
+
+// large
+@media (min-width: 992px) {
+  .contact-form {
+  input {
+    max-width: 18rem;
+    }
+  }
+}
+
+@media handheld and (orientation: landscape) {
+.contact-form {
+  input {
+    max-width: 13rem;
+  }
+}
 }

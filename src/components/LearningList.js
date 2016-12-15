@@ -10,25 +10,25 @@ const LearningList = (props) => {
       <Block className="skills">
         <ScrollEffects animate='fadeInRight'>
           <Row>
-            <h1>I'm always learning</h1>
+            <h1>Noteworthy strengths</h1>
           </Row>
-          <Row>
+          {/* <Row>
             <aside className='text-flow'>Here are some things I strive to improve at every day.</aside>
-          </Row>
+          </Row> */}
           <Collapsible popout accordion >
-            <CollapsibleItem header='Node &amp; Express' icon='build'>
+            <CollapsibleItem header='Strong orgainization' icon='build'>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </CollapsibleItem>
-            <CollapsibleItem header='Relational Databases' icon='build'>
+            <CollapsibleItem header='Always Learning' icon='build'>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </CollapsibleItem>
-            <CollapsibleItem header='Restful API design' icon='build'>
+            <CollapsibleItem header='Great communication' icon='build'>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </CollapsibleItem>
-            <CollapsibleItem header='Authorization &amp; authentication' icon='build'>
+            <CollapsibleItem header='Team player' icon='build'>
             Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             </CollapsibleItem>
-            <CollapsibleItem header='Security' icon='build'>
+            <CollapsibleItem header='Problem Solver' icon='build'>
             (OAUTH2 and Web Token)
             </CollapsibleItem>
           </Collapsible>
