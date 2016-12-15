@@ -5,13 +5,16 @@
 
 .links {
   color: #a0eec0;
-  font-size: 6em; }
+  font-size: 4rem; }
 
 @media (min-width: 600px) {
   .links {
-    font-size: 6em; } }
+    font-size: 6rem; } }
 @media (min-width: 992px) {
   .links {
-    font-size: 7em; } }
+    font-size: 7rem; } }
+@media (min-width: 1400px) {
+  .links {
+    font-size: 9rem; } }
 
 /*# sourceMappingURL=social-icons.css.map */

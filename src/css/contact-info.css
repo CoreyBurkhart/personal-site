@@ -1,5 +1,3 @@
-.contact-ul section {
-  padding: 2rem 4rem; }
 .contact-ul h1 {
   color: white;
   text-transform: uppercase;
@@ -17,5 +15,9 @@
   transition: color .3s;
   color: white;
   cursor: pointer; }
+
+@media (min-width: 600px) {
+  section {
+    padding: 2rem 4rem; } }
 
 /*# sourceMappingURL=contact-info.css.map */

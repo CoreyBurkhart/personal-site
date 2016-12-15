@@ -1,7 +1,7 @@
 .skills aside {
   margin: -1rem 0 2rem 0; }
 .skills ul {
-  font-size: .9em; }
+  font-size: 1rem; }
   .skills ul li i {
     color: #4adf86; }
 
@@ -10,14 +10,27 @@
   color: white;
   font-weight: 500;
   padding: 1rem;
-  font-size: 1.3rem; }
+  font-size: .9rem; }
 
 .collapsible li {
   min-width: 100% !important; }
   .collapsible li.active {
     min-width: 100% !important; }
   .collapsible li a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500; }
+
+@media (min-width: 600px) {
+  .collapsible-body {
+    font-size: 1.1rem; }
+
+  .collapsible li a {
+    font-size: 1.4rem; } }
+@media (min-width: 992px) {
+  .collapsible-body {
+    font-size: 1.3rem; }
+
+  .collapsible li a {
+    font-size: 1.5rem; } }
 
 /*# sourceMappingURL=skill-learning-lists.css.map */

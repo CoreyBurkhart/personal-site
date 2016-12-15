@@ -8,18 +8,24 @@
 
 .links {
   color: $secondary-color;
-  font-size: 6em;
+  font-size: 4rem;
 }
 
 @media (min-width: 600px) {
   .links {
-    font-size: 6em;
+    font-size: 6rem;
   }
 }
 
 // large
 @media (min-width: 992px) {
   .links {
-    font-size: 7em;
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .links {
+    font-size: 9rem;
   }
 }

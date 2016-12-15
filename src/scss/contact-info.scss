@@ -1,9 +1,6 @@
 @import "variables";
 
 .contact-ul {
-  section {
-    padding: 2rem 4rem;
-  }
   h1 {
     color: white;
     text-transform: uppercase;
@@ -31,6 +28,9 @@
 
 // medium
 @media (min-width: 600px) {
+  section {
+    padding: 2rem 4rem;
+  }
 
 }
 

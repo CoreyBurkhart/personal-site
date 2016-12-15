@@ -5,7 +5,7 @@
     margin: -1rem 0 2rem 0;
   }
   ul {
-    font-size: .9em;
+    font-size: 1rem;
     li i {
       color: darken($secondary-color, 20%);
     }
@@ -17,7 +17,7 @@
   color: white;
   font-weight: 500;
   padding: 1rem;
-  font-size: 1.3rem;
+  font-size: .9rem;
 }
 
 .collapsible li {
@@ -26,16 +26,32 @@
     min-width: 100% !important;
   }
   & a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 }
 
 @media (min-width: 600px) {
+  .collapsible-body {
+    font-size: 1.1rem;
+  }
 
+  .collapsible li {
+    & a {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 // large
 @media (min-width: 992px) {
+  .collapsible-body {
+    font-size: 1.3rem;
+  }
 
+  .collapsible li {
+    & a {
+      font-size: 1.5rem;
+    }
+  }
 }
