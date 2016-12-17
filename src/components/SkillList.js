@@ -16,19 +16,19 @@ const SkillsList = (props) => {
           </Row> */}
           <Collapsible popout  accordion >
             <CollapsibleItem header='HTML5, CSS3, SASS' icon='done'>
-              Clean, maintainable, and SEO friendly. As essential as it is important. (cite to upwork test score it good?)
+              I build semantic HTML templates and build quickly using frameworks including Bootstrap and Materialize.
             </CollapsibleItem>
-            <CollapsibleItem header='Javascript' icon='done'>
-              Quirky but awesome. I write in ES6 but understand older javascript as well as jQuery.
+            <CollapsibleItem header='Javascript(ES6)' icon='done'>
+              Making clean, readable, and maintainable code is my goal. Javascript, its quirks and functional programming, makes building easy and I love it.
             </CollapsibleItem>
-            <CollapsibleItem header='React' icon='done'>
-              I love and specialize in react, offering great performance, modularity and reliability.
+            <CollapsibleItem header='React.js with Flux/Redux' icon='done'>
+            I have experience using react and flux-based libraries to build reliable and maintainable single page apps. As well as experience with accompanying tools like Babel, Node.js, and Webpack.
             </CollapsibleItem>
-            <CollapsibleItem header='Foundation 6, Bootstrap 3, Materialize' icon='done'>
-              This page uses Materialize, but have projects utilizing Foundation and Bootstrap. I enjoy learning any tool that can make development faster and painless.
+            <CollapsibleItem header='AJAX and Asynchronous coding' icon='done'>
+              I understand the importance of performant asynchronous code.
             </CollapsibleItem>
-            <CollapsibleItem header='Unit Testing' icon='done'>
-              Where there is javascript, there should be testing. I use Jest.
+            <CollapsibleItem header='Automated Testing' icon='done'>
+              I have experience testing with React and Jest, as well as other browser tools for quick and efficient bug squashing
             </CollapsibleItem>
           </Collapsible>
         </ScrollEffects>

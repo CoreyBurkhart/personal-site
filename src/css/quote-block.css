@@ -2260,8 +2260,8 @@
     font-size: 1.4rem; } }
 @media (min-width: 1200px) {
   .quote blockquote {
-    font-size: 2.5rem; }
+    font-size: 3rem; }
   .quote sub {
-    font-size: 1.7rem; } }
+    font-size: 2rem; } }
 
 /*# sourceMappingURL=quote-block.css.map */

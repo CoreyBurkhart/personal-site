@@ -17,8 +17,10 @@ export default class QuoteBlock extends Component {
     return (
         <Block fullWidth={true} className={"quote "+ this.props.colorSet} >
           <ScrollEffects animate='fadeIn' >
-            <blockquote>{this.props.quote}</blockquote>
-            <sub><em>{this.props.cite}</em></sub>
+            <div className='fullWidth'>
+              <blockquote>{this.props.quote}</blockquote>
+              <sub><em>{this.props.cite}</em></sub>
+            </div>
           </ScrollEffects>
         </Block>
     )

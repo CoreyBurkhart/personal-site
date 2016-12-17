@@ -16,20 +16,20 @@ const LearningList = (props) => {
             <aside className='text-flow'>Here are some things I strive to improve at every day.</aside>
           </Row> */}
           <Collapsible popout accordion >
-            <CollapsibleItem header='Strong orgainization' icon='build'>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <CollapsibleItem header='Excellent oral and written communication skills' icon='build'>
+              Ability to collaborate with team members as well as work independently. Ability to communicate technical ideas to business users and other teams
             </CollapsibleItem>
             <CollapsibleItem header='Always Learning' icon='build'>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Passionate about user experience, open source work, very comfortable contributing to open source software projects using git and github.
             </CollapsibleItem>
-            <CollapsibleItem header='Great communication' icon='build'>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </CollapsibleItem>
-            <CollapsibleItem header='Team player' icon='build'>
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <CollapsibleItem header='Results-oriented' icon='build'>
+              able to work under pressure and deadlines
             </CollapsibleItem>
             <CollapsibleItem header='Problem Solver' icon='build'>
-            (OAUTH2 and Web Token)
+              Excellent problem-solving and analytical skills.
+            </CollapsibleItem>
+            <CollapsibleItem header='Tell-tale signs of amazing programming' icon='build'>
+              Able to sit for days, if not weeks at a time. Copious coffee consumption. 
             </CollapsibleItem>
           </Collapsible>
         </ScrollEffects>

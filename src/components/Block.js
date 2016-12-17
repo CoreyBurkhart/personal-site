@@ -4,12 +4,14 @@ import { Col } from 'react-materialize';
 export default class Block extends Component {
 
   render() {
+    let {id, style, fullWidth, className, children} = this.props;
+    fullWidth = fullWidth ? 12 : 6;
 
     return (
-      <Col id={this.props.id} style={this.props.style} s={12} m={12} l={this.props.fullWidth ? 12 : 6} className={'block valign-wrapper ' + this.props.className} >
-        <div  className="valign" >
-          {this.props.children}
-        </div>
+      <Col id={id} style={style} s={12} m={12} l={fullWidth} className={'block valign-wrapper ' + className} >
+        <Col className="valign" >
+          {children}
+        </Col>
       </Col>
     )
   }
