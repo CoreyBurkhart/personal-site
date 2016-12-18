@@ -22,13 +22,13 @@ const SkillsList = (props) => {
               Making clean, readable, and maintainable code is my goal. Javascript, its quirks and functional programming, makes building easy and I love it.
             </CollapsibleItem>
             <CollapsibleItem header='React.js with Flux/Redux' icon='done'>
-            I have experience using react and flux-based libraries to build reliable and maintainable single page apps. As well as experience with accompanying tools like Babel, Node.js, and Webpack.
+            I have experience using React and Flux-based libraries to build reliable and maintainable single page apps. As well as experience with accompanying tools like Babel, Node.js, and Webpack.
             </CollapsibleItem>
             <CollapsibleItem header='AJAX and Asynchronous coding' icon='done'>
               I understand the importance of performant asynchronous code.
             </CollapsibleItem>
             <CollapsibleItem header='Automated Testing' icon='done'>
-              I have experience testing with React and Jest, as well as other browser tools for quick and efficient bug squashing
+              I have experience testing with React and Jest, as well as other browser tools for quick and efficient bug squashing.
             </CollapsibleItem>
           </Collapsible>
         </ScrollEffects>

@@ -1,7 +1,11 @@
 .skills aside {
   margin: -1rem 0 2rem 0; }
 .skills ul {
-  font-size: 1rem; }
+  font-size: 1rem;
+  box-shadow: none !important; }
+  .skills ul li {
+    margin: 0 !important;
+    box-shadow: none !important; }
   .skills ul li i {
     color: #4adf86; }
 

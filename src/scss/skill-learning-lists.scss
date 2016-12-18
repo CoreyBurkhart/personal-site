@@ -6,6 +6,11 @@
   }
   ul {
     font-size: 1rem;
+    box-shadow: none !important;
+    li {
+      margin: 0 !important;
+      box-shadow: none !important;
+    }
     li i {
       color: darken($secondary-color, 20%);
     }

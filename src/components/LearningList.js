@@ -17,19 +17,19 @@ const LearningList = (props) => {
           </Row> */}
           <Collapsible popout accordion >
             <CollapsibleItem header='Excellent oral and written communication skills' icon='build'>
-              Ability to collaborate with team members as well as work independently. Ability to communicate technical ideas to business users and other teams
+              Ability to collaborate with team members as well as work independently. Ability to communicate technical ideas to business users and other teams.
             </CollapsibleItem>
             <CollapsibleItem header='Always Learning' icon='build'>
-              Passionate about user experience, open source work, very comfortable contributing to open source software projects using git and github.
+              Passionate about user experience, open source work, and very comfortable contributing to open source software projects using git and github.
             </CollapsibleItem>
             <CollapsibleItem header='Results-oriented' icon='build'>
-              able to work under pressure and deadlines
+              Able to work under pressure and deadlines. 
             </CollapsibleItem>
             <CollapsibleItem header='Problem Solver' icon='build'>
               Excellent problem-solving and analytical skills.
             </CollapsibleItem>
             <CollapsibleItem header='Tell-tale signs of amazing programming' icon='build'>
-              Able to sit for days, if not weeks at a time. Copious coffee consumption. 
+              Able to sit for days, if not weeks at a time. Copious coffee consumption.
             </CollapsibleItem>
           </Collapsible>
         </ScrollEffects>
