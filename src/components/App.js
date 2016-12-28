@@ -12,7 +12,7 @@ import LearningList from './LearningList.js';
 import SkillsList from './SkillList.js';
 import SocialIcons from './SocialIcons.js';
 //IMAGES
-import me from '../images/me.jpeg';
+import me from '../images/me.jpg';
 
 class App extends Component {
 
