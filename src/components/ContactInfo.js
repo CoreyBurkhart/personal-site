@@ -1,6 +1,6 @@
 import React from 'react';
 import Block from './Block.js';
-import ScrollEffects from './scroll-effects';
+import ScrollEffects from './Scroll-effects';
 import '../css/contact-info.css';
 
 const ContactInfo = (props) => {

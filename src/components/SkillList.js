@@ -1,6 +1,6 @@
 import React from 'react';
 import Block from './Block.js';
-import ScrollEffects from './scroll-effects';
+import ScrollEffects from './Scroll-effects';
 import { Row, Collapsible, CollapsibleItem } from 'react-materialize';
 import '../css/skill-learning-lists.css';
 

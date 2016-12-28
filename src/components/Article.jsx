@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Block from './Block.js';
-import ScrollEffects from './scroll-effects';
+import ScrollEffects from './Scroll-effects';
 
 export default class Article extends Component {
 
