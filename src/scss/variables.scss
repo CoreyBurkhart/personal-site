@@ -1,13 +1,16 @@
-$font-large: 2rem;
+$font-base-sm: 1.5rem;
+$font-declaration-sm: $font-base-sm * 1.5;
+$font-base-md: 1.7rem;
+$font-declaration-md: $font-base-md * 1.5;
+$font-base-lg: 2rem;
+$font-declaration-lg: $font-base-lg * 1.5;
 
-//colors
-
-$envelope-color: black;
-$phone-color: black;
-$marker-color: black;
+$icon-sm: 3rem;
+$icon-md: 5rem;
+$icon-lg: 7rem;
+$icon-xl: 9rem;
 
 //main colors
 
 $primary-color: rgba(52, 152, 219,1.0);
 $secondary-color: lighten(rgb(52,219,119), 25%);
-$secondary-color-contrast: $secondary-color;
