@@ -1,0 +1,23 @@
+#portfolio-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+
+
+.fig {
+  max-width: 95%;
+  margin: 3rem auto;
+  text-align: center;
+  img {
+    width: 95%;
+  }
+  figcaption {
+    @include font-size($font-heading, null) ;
+  }
+  a {
+    color: $primary-color;
+  }
+}

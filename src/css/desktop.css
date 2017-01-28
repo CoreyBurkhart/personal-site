@@ -1,0 +1,23 @@
+@media (min-width: 900px) {
+  .generic-block.resize {
+    display: inline-flex;
+    width: 50%;
+    height: 50vh; }
+
+  .heading-block {
+    position: absolute;
+    top: 0;
+    left: 50%; }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important; } }
+@media (min-width: 1400px) {
+  .quote-container, .fullWidth {
+    width: 75%;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=desktop.css.map */

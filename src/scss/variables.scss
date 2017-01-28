@@ -1,9 +1,48 @@
-$font-base-sm: 1.5rem;
-$font-declaration-sm: $font-base-sm * 1.5;
-$font-base-md: 1.7rem;
-$font-declaration-md: $font-base-md * 1.5;
-$font-base-lg: 2rem;
-$font-declaration-lg: $font-base-lg * 1.5;
+$font-text: (
+  null: 1.1rem,
+  480px: 1.2rem,
+  600px: 1.3rem,
+  1024px: 1.4rem
+  );
+
+$font-heading: (
+  null: 1.5rem,
+  480px: 1.7rem,
+  600px: 1.9rem,
+  1024px: 2rem,
+  1200px: 2.2rem,
+  1400px: 2.3rem
+);
+
+$font-quote: (
+  null: 1.3rem,
+  480px: 1.5rem,
+  600px: 1.7rem,
+  1024px: 1.9rem
+);
+
+@mixin font-size($font-map, $scalar) {
+  @each $fs-break, $fs-size in $font-map {
+    @if $fs-break == null {
+      @if $scalar != null {
+        font-size: $fs-size * $scalar;
+      } @else {
+        font-size: $fs-size;
+      }
+    }
+    @else {
+      @if $scalar != null {
+        @media screen and (min-width: $fs-break) {
+          font-size: $fs-size * $scalar;
+        }
+      } @else {
+        @media screen and (min-width: $fs-break) {
+          font-size: $fs-size;
+        }
+      }
+    }
+  }
+}
 
 $icon-sm: 3rem;
 $icon-md: 5rem;
@@ -14,3 +53,4 @@ $icon-xl: 9rem;
 
 $primary-color: rgba(52, 152, 219,1.0);
 $secondary-color: lighten(rgb(52,219,119), 25%);
+$text-color: #666;

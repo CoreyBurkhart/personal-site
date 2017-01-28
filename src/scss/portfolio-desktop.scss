@@ -1,0 +1,14 @@
+@media (min-width: 900px) {
+  #portfolio-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .fig {
+    width: 40%;
+    flex-grow: .01;
+  }
+}
+
+@media (min-width: 1400px) {
+
+ }

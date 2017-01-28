@@ -1,7 +1,12 @@
 {
-  "main.css": "static/css/main.d8d72bee.css",
-  "main.css.map": "static/css/main.d8d72bee.css.map",
-  "main.js": "static/js/main.3309b21b.js",
-  "main.js.map": "static/js/main.3309b21b.js.map",
-  "static/media/me.jpg": "static/media/me.3e4d26f4.jpg"
+  "main.css": "static/css/main.3438f4c8.css",
+  "main.css.map": "static/css/main.3438f4c8.css.map",
+  "main.js": "static/js/main.82a2f3a1.js",
+  "main.js.map": "static/js/main.82a2f3a1.js.map",
+  "static/media/calc.png": "static/media/calc.479b8454.png",
+  "static/media/gingerkitten.jpg": "static/media/gingerkitten.de4065b4.jpg",
+  "static/media/me.jpg": "static/media/me.3e4d26f4.jpg",
+  "static/media/pomodoro.png": "static/media/pomodoro.51dccca7.png",
+  "static/media/simon-wip.png": "static/media/simon-wip.4dd8c279.png",
+  "static/media/tic-tac-toe.png": "static/media/tic-tac-toe.82eb5856.png"
 }
