@@ -5,6 +5,8 @@ import simon from "../../images/simon-wip.png";
 import tictactoe from "../../images/tic-tac-toe.png";
 import pomodoro from "../../images/pomodoro.png";
 import calc from "../../images/calc.png";
+import weather from "../../images/weather.png";
+import wikiViewer from "../../images/wikiViewer.png";
 
 export default class Portfolio extends React.Component {
 
@@ -41,6 +43,18 @@ export default class Portfolio extends React.Component {
               <img src={calc} alt="Javascript calculator"/>
               <figcaption >
                 <a target="_blank" href="https://nameless-brushlands-20612.herokuapp.com/" >JavaScript Calculator</a>
+              </figcaption>
+            </figure>
+            <figure className="fig">
+              <img src={weather} alt="Screenshot of weather app"/>
+              <figcaption >
+                <a target="_blank" href="https://obscure-falls-67373.herokuapp.com/">Weather App</a>
+              </figcaption>
+            </figure>
+            <figure className="fig">
+              <img src={wikiViewer} alt="Screenshot of Wikipedia Viewer"/>
+              <figcaption >
+                <a target="_blank" href="https://cryptic-plains-24623.herokuapp.com/">Wikipedia Viewer</a>
               </figcaption>
             </figure>
           </section>
