@@ -2243,7 +2243,17 @@
   padding: 0 2rem; }
   .list h3 {
     margin: 0;
-    padding: 1rem 0; }
+    padding: 1rem 0;
+    font-size: 1.21rem; }
+    @media screen and (min-width: 480px) {
+      .list h3 {
+        font-size: 1.32rem; } }
+    @media screen and (min-width: 600px) {
+      .list h3 {
+        font-size: 1.43rem; } }
+    @media screen and (min-width: 1024px) {
+      .list h3 {
+        font-size: 1.54rem; } }
   .list h3:hover, .list p:hover {
     cursor: pointer; }
   .list h3:before {
@@ -2427,6 +2437,10 @@
     position: absolute;
     top: 0;
     left: 50%; }
+
+  .list {
+    width: 75%;
+    margin: 0 auto; }
 
   footer {
     display: flex;

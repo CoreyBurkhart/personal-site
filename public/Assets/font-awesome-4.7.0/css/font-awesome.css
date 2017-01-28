@@ -201,6 +201,9 @@
  .fa-map-marker:before {
    content: "\f041";
  }
+ .fa-codepen:before {
+  content: "\f1cb";
+}
 
 .sr-only {
   position: absolute;

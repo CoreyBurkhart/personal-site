@@ -58,11 +58,14 @@ const Footer = (props) => {
         <Block className="colored resize social" >
           <ScrollEffects animate='fadeIn' offset='-100' >
             <div className="social-container">
-              <a href="https://github.com/CoreyBurkhart" alt="Corey's Github" target="_blank" title="Corey's Github profile" className="links" >
+              <a href="https://github.com/CoreyBurkhart" alt="Corey's Github" target="_blank" title="Github" className="links" >
                 <i className="fa fa-github"></i>
               </a>
-              <a href="https://www.linkedin.com/in/corey-burkhart-4859a6123?trk=nav_responsive_tab_profile_pic" alt="Corey Burkhart's LinkedIn profile" target="_blank" title="Corey's LinkedIn profile" className="links" >
+              <a href="https://www.linkedin.com/in/corey-burkhart-4859a6123?trk=nav_responsive_tab_profile_pic" alt="Corey Burkhart's LinkedIn" target="_blank" title="LinkedIn" className="links" >
                 <i className="fa fa-linkedin"></i>
+              </a>
+              <a href="http://codepen.io/coreyburk/" alt="Corey's Codepen" target="_blank" title="Codepen" className="links" >
+                <i className="fa fa-codepen"></i>
               </a>
               {link}
             </div>

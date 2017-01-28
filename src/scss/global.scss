@@ -37,6 +37,7 @@
   h3 {
     margin: 0;
     padding: 1rem 0;
+    @include font-size($font-text, 1.1);
   }
   h3:hover, p:hover {
     cursor: pointer;
