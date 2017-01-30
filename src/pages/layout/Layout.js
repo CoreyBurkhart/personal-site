@@ -4,14 +4,39 @@ import "../../css/index.css";
 import ScrollEffects from '../../util-components/ScrollEffects.js';
 import { Link } from 'react-router';
 import me from '../../images/me.jpg';
+import scrollIntoView from 'scroll-into-view';
 
 
 
 export default class Layout extends React.Component {
+
+  scrollToContact(e) {
+
+    let c = document.getElementById('contact');
+
+    scrollIntoView(c);
+  }
+
   render() {
     const route = this.props.children.props.location.pathname;
     return (
       <div id="layout-container">
+         {/* <div id="faded-layer"><div id="faded-corner"></div></div>  fade out everything but contact block???? */}
+        <div id="nav-container">
+          <nav id="main-nav">
+            <Link to="/">
+              <h1>Corey Burkhart</h1>
+            </Link>
+            <ul>
+              <li>
+                <Link to="/portfolio">Portfolio</Link>
+              </li>
+              <li>
+                <span onClick={this.scrollToContact}>Contact</span>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <ImageBlock id='me' className="resize" url={me} />
           {this.props.children}
         <Footer route={route}/>
@@ -34,7 +59,7 @@ const Footer = (props) => {
 
   return (
     <footer>
-      <Block className='contact-ul colored resize' >
+      <Block id="contact" className='contact-ul colored resize' >
         <ScrollEffects animate='fadeIn' offset='-200'>
           <section className="">
             <h1 className="contrast-header">Get in Touch</h1>
