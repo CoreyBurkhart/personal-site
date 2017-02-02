@@ -10,26 +10,50 @@ import scrollIntoView from 'scroll-into-view';
 
 export default class Layout extends React.Component {
 
+  componentWillMount() {
+    this.routeHandler();
+    window.addEventListener('hashchange', this.routeHandler.bind(this))
+  }
+
+  componentWillUnMount() {
+    window.removeEventListener('hashchange', this.routeHandler)
+  }
+
   scrollToContact(e) {
-
     let c = document.getElementById('contact');
-
     scrollIntoView(c);
   }
 
+  routeHandler(e) {
+    let link;
+    const page = this.props.children.type.name;
+
+    if(page === 'Portfolio') {
+      link =  <Link to='/' className="links" >
+                <i className="fa fa-arrow-left" title="Take me back"></i>
+              </Link>
+      this.setState({navCx: 'active'});
+    } else {
+      link =  <Link to='portfolio' className="links" >
+                <i className="fa fa-list-alt" title="View my portfolio"></i>
+              </Link>
+      this.setState({navCx: ' '});
+    }
+    this.setState({link: link});
+  }
+
   render() {
-    const route = this.props.children.props.location.pathname;
     return (
       <div id="layout-container">
          {/* <div id="faded-layer"><div id="faded-corner"></div></div>  fade out everything but contact block???? */}
-        <div id="nav-container">
+        <div id="nav-container" >
           <nav id="main-nav">
             <Link to="/">
               <h1>Corey Burkhart</h1>
             </Link>
             <ul>
               <li>
-                <Link to="/portfolio">Portfolio</Link>
+                <Link className={this.state.navCx} to="/portfolio">Portfolio</Link>
               </li>
               <li>
                 <span onClick={this.scrollToContact}>Contact</span>
@@ -37,25 +61,16 @@ export default class Layout extends React.Component {
             </ul>
           </nav>
         </div>
-        <ImageBlock id='me' className="resize" url={me} />
+        <ImageBlock id='me' className="resize for-nav" url={me} />
           {this.props.children}
-        <Footer route={route}/>
+        <Footer link={this.state.link}/>
       </div>
     )
   }
 }
 
 const Footer = (props) => {
-  let link;
-  if(props.route === '/') {
-    link =  <Link to='portfolio' className="links" >
-              <i className="fa fa-list-alt" title="View my portfolio"></i>
-            </Link>
-  } else {
-    link =  <Link to='/' className="links" >
-              <i className="fa fa-arrow-left" title="Take me back"></i>
-            </Link>
-  }
+
 
   return (
     <footer>
@@ -92,7 +107,7 @@ const Footer = (props) => {
               <a href="http://codepen.io/coreyburk/" alt="Corey's Codepen" target="_blank" title="Codepen" className="links" >
                 <i className="fa fa-codepen"></i>
               </a>
-              {link}
+              {props.link}
             </div>
           </ScrollEffects>
         </Block>

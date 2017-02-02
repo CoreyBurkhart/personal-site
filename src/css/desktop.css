@@ -1,8 +1,14 @@
 @media (min-width: 900px) {
+  #main-nav h1 {
+    margin-left: 2rem; }
+
+  .for-nav {
+    margin-top: 10vh; }
+
   .generic-block.resize {
     display: inline-flex;
     width: 50%;
-    height: 50vh; }
+    min-height: 50vh; }
 
   .heading-block {
     position: absolute;
@@ -12,6 +18,9 @@
   .list {
     width: 75%;
     margin: 0 auto; }
+
+  .bottom-article {
+    padding: 1rem 20% !important; }
 
   footer {
     display: flex;

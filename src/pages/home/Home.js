@@ -17,7 +17,7 @@ class Home extends Component {
         <SkillsList/>
         <LearningList/>
         <QuoteBlock quote="&quot;I have not failed. I've just found 10,000 ways that won't work&quot;" cite='Thomas A. Edison' />
-        <Article title='The bottom line' text=" It's simple, I’m a developer with empathy. I have the expertise to get the job done and the interpersonal skills to communicate in order to get it done right." />
+        <Article cx="bottom-article" title='The bottom line' text=" It's simple, I’m a developer with empathy. I have the expertise to get the job done and the interpersonal skills to communicate in order to get it done right." />
       </div>
     )
   }
@@ -37,7 +37,7 @@ const expandOnScroll = (e) => {
 
 const Article = (props) => {
   return (
-    <Block className={"contrast-block " + props.className} fullWidth={true}>
+    <Block className={"contrast-block " + props.cx} fullWidth={true}>
       <ScrollEffects animate='fadeInUp' >
         <article className='fullWidth'>
           <h1>{props.title}</h1>
@@ -50,7 +50,7 @@ const Article = (props) => {
 
 const Heading = (props) => {
   return (
-    <Block className='heading heading-block colored resize' >
+    <Block className='heading heading-block for-nav colored resize' >
       <ScrollEffects animate='fadeInRight' >
         <heading>
           <sup className="contrast-header">Hi, I'm Corey</sup>

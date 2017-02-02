@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$primary-color".
-        on line 11 of src/scss/global.scss
+        on line 15 of src/scss/global.scss
 
-6: #layout-container {
-7:   width: 100%;
-8:   max-width: 100%;
-9:   height: 100%;
-10:   .colored {
-11:     background: $primary-color;
-12:     color: $secondary-color;
-13:     &:nth-child(even) {
-14:       background: $secondary-color;
-15:       color: $primary-color;
-16:     }
+10:   width: 100%;
+11:   position: relative;
+12:   max-width: 100%;
+13:   height: 100%;
+14:   .colored {
+15:     background: $primary-color;
+16:     color: $secondary-color;
+17:     &:nth-child(even) {
+18:       background: $secondary-color;
+19:       color: $primary-color;
+20:     }
 
 Backtrace:
-src/scss/global.scss:11
+src/scss/global.scss:15
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /var/lib/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -76,4 +76,4 @@ src/scss/global.scss:11
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-color\".\A         on line 11 of src/scss/global.scss\A \A 6: #layout-container {\A 7:   width: 100%;\A 8:   max-width: 100%;\A 9:   height: 100%;\A 10:   .colored {\A 11:     background: $primary-color;\A 12:     color: $secondary-color;\A 13:     &:nth-child(even) {\A 14:       background: $secondary-color;\A 15:       color: $primary-color;\A 16:     }"; }
+  content: "Error: Undefined variable: \"$primary-color\".\A         on line 15 of src/scss/global.scss\A \A 10:   width: 100%;\A 11:   position: relative;\A 12:   max-width: 100%;\A 13:   height: 100%;\A 14:   .colored {\A 15:     background: $primary-color;\A 16:     color: $secondary-color;\A 17:     &:nth-child(even) {\A 18:       background: $secondary-color;\A 19:       color: $primary-color;\A 20:     }"; }

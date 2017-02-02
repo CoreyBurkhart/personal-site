@@ -19,7 +19,7 @@ export default class Portfolio extends React.Component {
   render() {
     return (
       <main>
-        <Block className="colored heading-block resize" >
+        <Block className="colored heading-block resize for-nav" >
           <h1>Portfolio</h1>
         </Block>
           <section id="portfolio-content">
@@ -33,7 +33,7 @@ export default class Portfolio extends React.Component {
             </figure>
             <figure className="fig">
               <a target="_blank" href="https://shielded-fjord-91245.herokuapp.com/">
-                <img src={todo} alt="picture of a todo list app"/>
+                <img src={todo} alt="todo list app"/>
                 <figcaption >
                   Todo List (JS design patterns
                 </figcaption>
@@ -65,7 +65,7 @@ export default class Portfolio extends React.Component {
             </figure>
             <figure className="fig">
               <a target="_blank" href="https://obscure-falls-67373.herokuapp.com/">
-                <img src={weather} alt="Screenshot of weather app"/>
+                <img src={weather} alt="weather app"/>
                 <figcaption >
                   Weather App
                 </figcaption>
@@ -73,7 +73,7 @@ export default class Portfolio extends React.Component {
             </figure>
             <figure className="fig">
               <a target="_blank" href="https://cryptic-plains-24623.herokuapp.com/">
-                <img src={wikiViewer} alt="Screenshot of Wikipedia Viewer"/>
+                <img src={wikiViewer} alt="Wikipedia Viewer"/>
                 <figcaption >
                   Wikipedia Viewer
                 </figcaption>
