@@ -35,9 +35,9 @@ export default class Portfolio extends React.Component {
               <a target="_blank" href="https://shielded-fjord-91245.herokuapp.com/">
                 <img src={todo} alt="todo list app"/>
                 <figcaption >
-                  Todo List (JS design patterns
+                  Todo List (JS design patterns)
                 </figcaption>
-              )</a>
+              </a>
             </figure>
             <figure className="fig">
               <a target="_blank" href="https://serene-scrubland-78212.herokuapp.com/">
