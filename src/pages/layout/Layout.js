@@ -1,7 +1,7 @@
 import React from 'react';
 import Block from '../../util-components/Block.js';
 import "../../css/index.css";
-import ScrollEffects from '../../util-components/ScrollEffects.js';
+import ScrollEffects from 'react-scroll-effects';
 import { Link } from 'react-router';
 import me from '../../images/me.jpg';
 import scrollIntoView from 'scroll-into-view';
@@ -75,7 +75,7 @@ const Footer = (props) => {
   return (
     <footer>
       <Block id="contact" className='contact-ul colored resize' >
-        <ScrollEffects animate='fadeIn' offset='-200'>
+        <ScrollEffects animate='fadeIn'>
           <section className="">
             <h1 className="contrast-header">Get in Touch</h1>
               <address>
@@ -96,7 +96,7 @@ const Footer = (props) => {
           </ScrollEffects>
         </Block>
         <Block className="colored resize social" >
-          <ScrollEffects animate='fadeIn' offset='-100' >
+          <ScrollEffects animate='fadeIn' >
             <div className="social-container">
               <a href="https://github.com/CoreyBurkhart" alt="Corey's Github" target="_blank" title="Github" className="links" >
                 <i className="fa fa-github"></i>

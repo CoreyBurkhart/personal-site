@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ScrollEffects from "../../util-components/ScrollEffects.js";
+import ScrollEffects from 'react-scroll-effects';
 import Block from "../../util-components/Block.js";
 
 class Home extends Component {
