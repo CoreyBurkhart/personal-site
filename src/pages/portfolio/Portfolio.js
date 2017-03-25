@@ -8,7 +8,7 @@ import calc from "../../images/calc.png";
 import weather from "../../images/weather.png";
 import wikiViewer from "../../images/wikiViewer.png";
 import todo from "../../images/todo.png";
-
+import btp from "../../images/BTP.png";
 
 export default class Portfolio extends React.Component {
 
@@ -23,6 +23,14 @@ export default class Portfolio extends React.Component {
           <h1>Portfolio</h1>
         </Block>
           <section id="portfolio-content">
+            <figure className="fig">
+              <a target="_blank" href="https://beyondthepixels.ghost.io/">
+                <img src={btp} alt="Beyond The Pixels gaming journalism blog"/>
+                <figcaption >
+                  Beyond The Pixels Blog
+                </figcaption>
+              </a>
+            </figure>
             <figure className="fig">
               <a target="_blank" href="https://evening-shelf-15132.herokuapp.com/">
                 <img src={simon} alt="simon game app"/>
