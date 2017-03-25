@@ -4,15 +4,13 @@
   width: 100%;
   padding: 4rem 0;
 }
-
-
-
 .fig {
   max-width: 95%;
   margin: 3rem auto;
   text-align: center;
   img {
-    width: 95%;
+    max-height: 30vh;
+    max-width: 100%;
   }
   figcaption {
     @include font-size($font-heading, null) ;

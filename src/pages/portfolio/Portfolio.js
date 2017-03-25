@@ -9,6 +9,8 @@ import weather from "../../images/weather.png";
 import wikiViewer from "../../images/wikiViewer.png";
 import todo from "../../images/todo.png";
 import btp from "../../images/BTP.png";
+import d3 from "../../images/d3.png";
+
 
 export default class Portfolio extends React.Component {
 
@@ -23,6 +25,14 @@ export default class Portfolio extends React.Component {
           <h1>Portfolio</h1>
         </Block>
           <section id="portfolio-content">
+            <figure className="fig">
+              <a target="_blank" href="https://bl.ocks.org/CoreyBurkhart/">
+                <img src={d3} alt="D3.js"/>
+                <figcaption >
+                  D3 Data Visualisations
+                </figcaption>
+              </a>
+            </figure>
             <figure className="fig">
               <a target="_blank" href="https://beyondthepixels.ghost.io/">
                 <img src={btp} alt="Beyond The Pixels gaming journalism blog"/>
