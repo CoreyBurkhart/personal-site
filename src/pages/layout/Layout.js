@@ -46,7 +46,7 @@ export default class Layout extends React.Component {
     return (
       <div id="layout-container">
          {/* <div id="faded-layer"><div id="faded-corner"></div></div>  fade out everything but contact block???? */}
-        <div id="nav-container" >
+        <header id="nav-container" >
           <nav id="main-nav">
             <Link to="/">
               <h1>Corey Burkhart</h1>
@@ -60,7 +60,7 @@ export default class Layout extends React.Component {
               </li>
             </ul>
           </nav>
-        </div>
+        </header>
         <ImageBlock id='me' className="resize for-nav" url={me} />
           {this.props.children}
         <Footer link={this.state.link}/>
