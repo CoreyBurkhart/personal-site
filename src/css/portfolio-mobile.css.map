@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,kBAAmB;EACjB,KAAK,EAAE,IAAI;;AAGb,IAAK;EACH,SAAS,EAAE,GAAG;EACd,MAAM,EAAE,SAAS;EACjB,UAAU,EAAE,MAAM;EAClB,QAAI;IACF,KAAK,EAAE,GAAG",
-"sources": ["../scss/portfolio-mobile.scss"],
-"names": [],
-"file": "portfolio-mobile.css"
-}

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,yBAA0B;EACxB,kBAAmB;IACjB,cAAc,EAAE,GAAG;IACnB,SAAS,EAAE,IAAI;;EAEjB,IAAK;IACH,KAAK,EAAE,GAAG;IACV,SAAS,EAAE,GAAG",
-"sources": ["../scss/portfolio-desktop.scss"],
-"names": [],
-"file": "portfolio-desktop.css"
-}
