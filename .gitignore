@@ -13,3 +13,7 @@ coverage
 .env
 npm-debug.log
 .sass-cache
+
+# only need index.html when deployed to github pages
+# for development see/use server.js
+index.html
