@@ -1,0 +1,69 @@
+.project-container 
+  padding: 15px
+  /* background: linear-gradient(160deg, grey 10%, white 80%) */
+  background-blend-mode: difference
+  border-radius: 4px
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  box-shadow: 5px 4px 5px lightgrey
+  position: relative
+
+
+.project-container::after 
+  content: ''
+  position: absolute
+  top: 30px
+  left: 30px
+  width: 100%
+  height: 100%
+  /* background-color: transparent */
+  /* background-image: url('/assets/images/topography/topography.png') */
+  /* background-blend-mode: difference */
+  border-radius: 4px
+  z-index: -5000
+/* 
+  normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity */
+
+
+.info-container 
+  padding-left: 20px
+
+
+.tag 
+  background: white
+  display: inline-block
+  /* border: 2px solid lightgrey */
+  border-radius: 30px
+  padding: 3px 15px
+  height: 30px
+
+
+.tag .brand__icon 
+  width: 20px
+  margin-right: 6px
+
+
+.tag .brand__text 
+  display: inline-block
+  font-size: 16px
+  transform: translateY(-4px)
+
+
+.info-container .description 
+  line-height: 1.6
+
+
+.project__thumbnail 
+  max-width: 200px
+  border-radius: 4px
+
+
+.project__thumbnail__caption 
+  text-align: center
+  /* color: grey */
+
+
+figure 
+  border-radius: 4px

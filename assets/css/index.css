@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+}
+
+p {
+  line-height: 2;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+nav ul {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 1rem;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-style: oblique;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+header {
+  padding-top: 1rem;
+}
+
+main {
+  padding: 10vh 1rem 10vh;
+}
+
+figcaption {
+  font-size: 10px;
+  font-style: italic;
+}
+
+footer ul li {
+  margin: 0 0 0.5rem 0;
+}
+
+footer ul li i {
+  margin-right: 0.5rem;
+}
+
+footer {
+  padding: 2rem 0.5rem;
+}
+
+@keyframes slide-up {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+.sub-heading {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.fw {
+  width: 100%;
+}
+
+.fh {
+  height: 100%;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.removed {
+  display: none;
+}
+
+.center-block {
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.padded {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.void-below {
+  margin-bottom: 15vh;
+}
+
+.rotated {
+  transform-origin: center;
+  transform: rotateX(180deg);
+  transition: all 150ms linear;
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  border-radius: 5px;
+}
+
+.hover--underline:hover:after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  border: none;
+  width: 100%;
+  margin: none;
+  background: #74b9ff;
+  transform: scaleX(1);
+  top: 100%;
+  transform-origin: left;
+  position: absolute;
+  animation: slide-up 100ms ease-in;
+  top: 100%;
+  left: 0;
+}
+
+.responsive-container {
+  max-width: 750px;
+}
+
+.headshot {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+  user-select: none;
+  position: relative;
+}
+
+.name {
+  margin: 0;
+}
+
+@media screen and (min-width: 650px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 20px;
+  }
+}
+.project-container {
+  padding: 15px;
+  /* background: linear-gradient(160deg, grey 10%, white 80%) */
+  background-blend-mode: difference;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: 5px 4px 5px lightgrey;
+  position: relative;
+}
+
+.project-container::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  /* background-color: transparent */
+  /* background-image: url('/assets/images/topography/topography.png') */
+  /* background-blend-mode: difference */
+  border-radius: 4px;
+  z-index: -5000;
+}
+
+/* normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity */
+.info-container {
+  padding-left: 20px;
+}
+
+.tag {
+  background: white;
+  display: inline-block;
+  /* border: 2px solid lightgrey */
+  border-radius: 30px;
+  padding: 3px 15px;
+  height: 30px;
+}
+
+.tag .brand__icon {
+  width: 20px;
+  margin-right: 6px;
+}
+
+.tag .brand__text {
+  display: inline-block;
+  font-size: 16px;
+  transform: translateY(-4px);
+}
+
+.info-container .description {
+  line-height: 1.6;
+}
+
+.project__thumbnail {
+  max-width: 200px;
+  border-radius: 4px;
+}
+
+.project__thumbnail__caption {
+  text-align: center;
+  /* color: grey */
+}
+
+figure {
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=index.css.map */
