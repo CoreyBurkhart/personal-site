@@ -3,6 +3,12 @@
 .container
   margin: 0 auto
   padding: 5em 1em
+  max-width: 700px
+
+.container.full-width
+  max-width: unset
+  margin-left: 0
+  margin-right: 0
 
 .accent--header
   color: $light-accent
@@ -42,6 +48,12 @@
   color: $light
   background-color: $main
   text-transform: uppercase
+  transition: box-shadow 100ms ease-in-out
+
+.button:hover,
+.button:active
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)
+  transition: box-shadow 150ms ease-in-out
 
 .button.disabled
   pointer-events: none
