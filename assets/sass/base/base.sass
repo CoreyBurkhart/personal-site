@@ -1,5 +1,9 @@
+@import '../variables'
+  
 * 
   box-sizing: border-box
+  padding: 0
+  margin: 0
 
 
 body
@@ -8,12 +12,16 @@ body
  
  
 h1, h2, h3, h4, h5, h6
-  font-family: 'Montserrat', sans-serif
-  font-weight: 900
+  font-weight: 700
+  color: $dark
+
+p, span, a, i, button, input, small
+  color: $dark-secondary
  
 
 html 
-  font-size: 14px
+  font-size: 12px
+  background-color: $light
 
 
 a 
@@ -22,7 +30,7 @@ a
 
 
 p 
-  line-height: 2
+  line-height: 21px
 
 
 figure 
@@ -31,7 +39,7 @@ figure
 
 ul 
   list-style: none
-  padding-left: 1rem
+  padding: 0
   margin: 0
 
 
@@ -50,14 +58,6 @@ nav a
   letter-spacing: 1.2px
 
 
-header 
-  padding-top: 1rem
-
-
-main 
-  padding: 10vh 1rem 10vh
-
-
 figcaption 
   font-size: 10px
   font-style: italic
@@ -69,10 +69,6 @@ footer ul li
 
 footer ul li i 
   margin-right: .5rem
-
-
-footer 
-  padding: 2rem 0.5rem
 
 
 
