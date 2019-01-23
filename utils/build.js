@@ -45,19 +45,19 @@ function transpile(srcFilePath, destFilePath) {
 
 transpile(indexEjsPath, path.resolve(__dirname, '../index.html'));
 
-fs.readdir(pagesDir, (err, files) => {
-  if(err) throw err;
+// fs.readdir(pagesDir, (err, files) => {
+//   if(err) throw err;
 
-  // create the directory to hold the transpiled files..
-  try {
-    fs.mkdirSync(sectionsDirPath);
-  } catch (err) {}
+//   // create the directory to hold the transpiled files..
+//   try {
+//     fs.mkdirSync(sectionsDirPath);
+//   } catch (err) {}
   
-  // transpile views/pages/*.ejs to section/*.html
-  for(const fileName of files) {
-    const absFilePath = path.join(pagesDir, fileName);
-    // replace .ejs -> .html
-    const newFileName = fileName.replace(/\..+/, '.html');
-    transpile(absFilePath, path.join(sectionsDirPath, newFileName));
-  }
-})
+//   // transpile views/pages/*.ejs to section/*.html
+//   for(const fileName of files) {
+//     const absFilePath = path.join(pagesDir, fileName);
+//     // replace .ejs -> .html
+//     const newFileName = fileName.replace(/\..+/, '.html');
+//     transpile(absFilePath, path.join(sectionsDirPath, newFileName));
+//   }
+// })
